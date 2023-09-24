@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_label">Real Estate Listing</string>
+    <string name="city_label">Situation :</string>
+    <string name="estate_type_label">Type de bien :</string>
+    <string name="price_label">Faire offre à partir de :</string>
+    <string name="bedroom_label">Chambres :</string>
+    <string name="professional_label">Agence :</string>
+    <string name="room_label">Pièces :</string>
+    <string name="back_label">Retour</string>
+    <string name="at_label">à</string>
+    <string name="error_label">Une erreur pendant la récupération des biens est survenue, merci de réessayer ultérieurement.</string>
+    <string name="empty_label">Désolé, aucun bien ne correspond aux critères sélectionnés.</string>
+    <string name="retry_label">Réessayer</string>
+    <string name="not_applicable_label">N/A</string>
+</resources>

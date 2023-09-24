@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="real_estate_base_url" translatable="false">"https://gsl-apps-technical-test.dignp.com/"</string>
+    <string name="currency_symbol" translatable="false">"€"</string>
+</resources>
