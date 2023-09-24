@@ -6,38 +6,29 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.cgo.realestatelisting.domain.RealEstateViewModel
+import com.cgo.realestatelisting.domain.resourceprovider.RealEstateResourceProvider
+import com.cgo.realestatelisting.ui.navigation.Navigation
 import com.cgo.realestatelisting.ui.theme.RealEstateListingTheme
+import org.koin.android.ext.android.inject
 
 class MainActivity : ComponentActivity() {
+
+    private val realEstateViewModel: RealEstateViewModel by inject()
+    private val realEstateResourceProvider: RealEstateResourceProvider by inject()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             RealEstateListingTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.tertiary
+                ) {
+                    Navigation(realEstateViewModel, realEstateResourceProvider)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RealEstateListingTheme {
-        Greeting("Android")
     }
 }
