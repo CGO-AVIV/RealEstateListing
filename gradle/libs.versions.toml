@@ -1,0 +1,60 @@
+[versions]
+accompanist = "0.30.1"
+activityCompose = "1.7.2"
+agp = "8.1.1"
+androidx-test-ext-junit = "1.1.5"
+appcompat = "1.6.1"
+arch = "2.2.0"
+coilCompose = "2.4.0"
+compose = "2023.03.00"
+core-ktx = "1.9.0"
+coroutines = "1.6.4"
+espresso-core = "3.5.1"
+junit = "4.13.2"
+jvmTarget = "17"
+koin = "3.5.0"
+kotlin = "1.8.10"
+lifecycleRuntimeKtx = "2.6.2"
+material = "1.9.0"
+mockito = "5.4.0"
+moshi = "1.15.0"
+navigationCompose = "2.5.3"
+org-jetbrains-kotlin-android = "1.8.10"
+retrofit = "2.9.0"
+runtimeLivedata = "1.5.1"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-arch-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "arch" }
+androidx-compose = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-navigation-accompanist = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "accompanist" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtimeLivedata" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "coroutines" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version = "5.0.0" }
+squareup-moshi-adapters = { module = "com.squareup.moshi:moshi-adapters", version.ref = "moshi" }
+squareup-moshi-core = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+squareup-moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
+squareup-retrofit2-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+squareup-retrofit2-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
+[plugins]
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }

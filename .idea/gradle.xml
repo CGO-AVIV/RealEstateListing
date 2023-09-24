@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/features/real-estate-listing-data" />
+            <option value="$PROJECT_DIR$/features/real-estate-listing-domain" />
+            <option value="$PROJECT_DIR$/utils/utils-network" />
           </set>
         </option>
       </GradleProjectSettings>
